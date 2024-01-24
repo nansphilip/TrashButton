@@ -21,7 +21,7 @@
 .task-trash {
     
     /* Size adjust */
-    --svg: 1.5rem;
+    --svg: 5vmax;
     
     width: var(--svg);
     border-radius: 0.3rem;
