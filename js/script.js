@@ -6,13 +6,14 @@ $('.task-trash').each(function () {
     const taskTrashEl = $(this);
     const taskTrashConfirmEl = taskTrashEl.find('.task-trash-confirm');
     const taskTrashCancelEl = taskTrashEl.find('.task-trash-cancel');
+    const task = taskTrashEl.closest('.task');
 
     /**
      * Confirms the action, hides the task, removes 'active' class, and removes event listeners.
      */
     const confirmTrash = () => {
         // Hides the task element and removes 'active' class
-        taskTrashEl.hide();
+        task.hide();
         taskTrashEl.removeClass('active');
 
         // Removes event listeners after use

@@ -21,11 +21,12 @@
 .task-trash {
     
     /* Size adjust */
-    --svg: 5vmax;
+    --svg: 3vmax;
+    --rad: 0.8vmax;
     
     width: var(--svg);
-    border-radius: 0.3rem;
-    background-color: hsl(0, 0%, 90%);
+    border-radius: var(--rad);
+    background-color: transparent;
     
     overflow: hidden;
     transition: 300ms ease-in-out;
@@ -40,7 +41,7 @@
 /* ----- Button ----- */
 .task-trash button {
     border: none;
-    border-radius: 0.3rem;
+    border-radius: var(--rad);
     background-color: transparent;
 }
 

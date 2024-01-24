@@ -1,4 +1,4 @@
-# Playground
+# TrashButton
 
 Welcome to this project.
 

@@ -15,9 +15,32 @@ html, body {
     height: 100%;
 }
 
-body {
+body, section {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+body {
+    flex-direction: column;
+}
+
+section {
+    flex-direction: row;
+
+    margin: 0.3vmax 0;
+    padding: 0.5vmax 1vmax;
+    border-radius: 1vmax;
+    border: 1px solid hsl(0, 0%, 40%);
+    box-shadow: 2px 2px 3px hsl(0, 0%, 70%);
+}
+
+section:hover {
+    background-color: hsl(0, 0%, 95%);
+}
+
+p {
+    margin-left: 1vmax;
+    margin-right: 10vmax;
+    font-size: 3vmax;
 }
