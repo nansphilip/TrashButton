@@ -39,7 +39,8 @@
 
 
 /* ----- Button ----- */
-.task-trash button {
+.task-trash-confirm,
+.task-trash-cancel {
     border: none;
     border-radius: var(--rad);
     background-color: transparent;
