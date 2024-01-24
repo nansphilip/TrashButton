@@ -1,0 +1,72 @@
+/* ----- Flexbox ----- */
+.task-trash,
+.task-trash-confirm,
+.task-trash-cancel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.task-trash {
+    justify-content: start;
+}
+
+.task-trash-confirm,
+.task-trash-cancel {
+    justify-content: center;
+}
+
+
+/* ----- Task ----- */
+.task-trash {
+    
+    /* Size adjust */
+    --svg: 1.5rem;
+    
+    width: var(--svg);
+    border-radius: 0.3rem;
+    background-color: hsl(0, 0%, 90%);
+    
+    overflow: hidden;
+    transition: 300ms ease-in-out;
+}
+
+.active {
+    width: calc(var(--svg) * 2);
+    transition: 300ms ease-in-out;
+}
+
+
+/* ----- Button ----- */
+.task-trash button {
+    border: none;
+    border-radius: 0.3rem;
+    background-color: transparent;
+}
+
+
+/* ----- SVG ----- */
+.task-trash svg {
+    height: var(--svg);
+    width: var(--svg);
+
+    fill: hsl(0, 0%, 50%);
+}
+
+.task-trash:hover svg {
+    fill: hsl(0, 0%, 20%);
+}
+
+.active svg {
+    fill: hsl(0, 0%, 20%);
+}
+
+/* Confirm button */
+.active .task-trash-confirm:hover svg {
+    fill: hsl(0, 100%, 50%);
+}
+
+/* Cancel button */
+.active .task-trash-cancel:hover svg {
+    fill: hsl(210, 100%, 50%);
+}
